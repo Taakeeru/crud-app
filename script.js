@@ -7,7 +7,7 @@ function render() {
 
   content.innerHTML = "";
   content.innerHTML += `<h1>My Contacts</h1>`;
-  content.innerHTML += `
+  content.innerHTML += /*html*/`
     <div>
         <input placeholder="Name" id="name">
         <input placeholder="Telefon" id="phone">
@@ -18,7 +18,7 @@ function render() {
     const name = names[i];
     const phoneNumber = phoneNumbers[i];
 
-    content.innerHTML += `
+    content.innerHTML += /*html*/`
         <div class="card">
             <b>Name: </b> ${name} <br>
             <b>Phone: </b> ${phoneNumber} <br>
